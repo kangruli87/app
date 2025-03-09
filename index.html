@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Kang Ruli</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .nav {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .nav a:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+            }
+            .nav a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang di App Kang Ruli</h1>
+        <p>Platform untuk berbagai aplikasi pendidikan dan proyek PKBM Celah Cahaya.</p>
+        <div class="nav">
+            <a href="https://github.com/kangruli" target="_blank">GitHub</a>
+            <a href="https://www.kangruli.web.id/" target="_blank">Blog</a>
+            <a href="#">LMS PKBM</a>
+            <a href="#">E-Library</a>
+            <a href="#">Forum Diskusi</a>
+            <a href="#">Kontak</a>
+        </div>
+    </div>
+</body>
+</html>
