@@ -522,7 +522,7 @@ color: var(--other-color);
   list-style: none;
   display: flex;
   gap: 20px;
-  background: #f8f8f8;
+  background: #1b1f24;
   padding: 10px;
 }
 
@@ -532,7 +532,7 @@ color: var(--other-color);
 
 .navlist a {
   text-decoration: none;
-  color: #333;
+  color: white;
   padding: 8px 12px;
   display: block;
 }
@@ -542,14 +542,22 @@ color: var(--other-color);
   position: absolute;
   top: 100%;
   left: 0;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: #1b1f24;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 99;
   min-width: 200px;
 }
 
 .dropdown-content li {
   width: 100%;
+}
+
+.dropdown-content a {
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background: #2c3138;
 }
 
 .dropdown:hover .dropdown-content {
