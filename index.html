@@ -59,42 +59,119 @@
   <p>Pengajar & Praktisi Teknologi | LKP | Blog Edukasi</p>
 </header>
 
+<style>
+  /* Tambahan CSS untuk dropdown */
+  nav {
+    background: #eee;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #0a74da;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+    text-align: left;
+  }
+  .dropdown-content a {
+    color: #0a74da;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
 <nav>
   <a href="https://www.kangruli.web.id">Beranda</a>
-  <a href="https://www.kangruli.web.id/search?q=Tutorial">Tutorial</a>
-  <a href="https://www.kangruli.web.id/search?q=Materi SMK & Kursus">Pendidikan</a>
-  <a href="https://www.kangruli.web.id/search?q=Teknologi Pendidikan">Teknologi Pendidikan</a>
-  <a href="https://www.kangruli.web.id/search?q=Keuangan">Keuangan</a>
-  <a href="https://www.kangruli.web.id/search?q=Loker">Loker</a>
-  <a href="https://www.kangruli.web.id/search?q=Karier & Pengembangan Diri">Karier</a>
-  <a href="https://www.kangruli.web.id/search?q=Pengetahuan">Pengetahuan</a>
-  <a href="https://www.kangruli.web.id/search?q=Panduan Belajar Mandiri">Belajar Mandiri</a>
-  <a href="https://www.kangruli.web.id/search?q=Tokoh">Tokoh</a>
-  <a href="https://www.kangruli.web.id/search?q=Literasi & Soft Skill">Literasi</a>
-  <a href="https://www.kangruli.web.id/search?q=Startup">Startup</a>
-  <a href="https://www.kangruli.web.id/search?q=Inspirasi dan Motivasi">Motivasi</a>
-  <a href="https://www.kangruli.web.id/search?q=Kesehatan">Kesehatan</a>
-  <a href="https://www.kangruli.web.id/search?q=Mobile & App">Mobile</a>
-  <a href="https://www.kangruli.web.id/search?q=Tips & Tricks">Tips</a>
-  <a href="https://www.kangruli.web.id/search?q=Peluang+Usaha">Peluang Usaha</a>
-  <a href="https://www.kangruli.web.id/search?q=Ulasan+Bisnis">Ulasan Bisnis</a>
-  <a href="https://www.kangruli.web.id/search?q=Blogging">Blogging</a>
-  <a href="https://www.kangruli.web.id/search?q=SEO">SEO</a>
-  <a href="https://www.kangruli.web.id/search?q=Google+Adsense">Adsense</a>
-  <a href="https://www.kangruli.web.id/search?q=WordPress">WordPress</a>
-  <a href="https://www.kangruli.web.id/search?q=Facebook">Facebook</a>
-  <a href="https://www.kangruli.web.id/search?q=Instagram">Instagram</a>
-  <a href="https://www.kangruli.web.id/search?q=TikTok">TikTok</a>
-  <a href="https://www.kangruli.web.id/search?q=YouTube">YouTube</a>
-  <a href="https://www.kangruli.web.id/search?q=Altcoin">Altcoin</a>
-  <a href="https://www.kangruli.web.id/search?q=Bitcoin">Bitcoin</a>
-  <a href="https://www.kangruli.web.id/search?q=Emas">Emas</a>
-  <a href="https://www.kangruli.web.id/search?q=Kripto">Kripto</a>
-  <a href="https://www.kangruli.web.id/search?q=Gadget">Gadget</a>
-  <a href="https://www.kangruli.web.id/search?q=Teknologi">Teknologi</a>
-  <a href="https://www.kangruli.web.id/search?q=Keterampilan Digital">Keterampilan Digital</a>
-  <a href="https://www.kangruli.web.id/p/tentang.html">Tentang</a>
-</nav>
+
+  <div class="dropdown">
+    <button class="dropbtn">Topik</button>
+    <div class="dropdown-content">
+      <a href="https://www.kangruli.web.id/search?q=Tutorial">Tutorial</a>
+      <a href="https://www.kangruli.web.id/search?q=Materi SMK & Kursus">Pendidikan</a>
+      <a href="https://www.kangruli.web.id/search?q=Teknologi Pendidikan">Teknologi Pendidikan</a>
+      <a href="https://www.kangruli.web.id/search?q=Keuangan">Keuangan</a>
+      <a href="https://www.kangruli.web.id/search?q=Karier & Pengembangan Diri">Karier</a>
+      <a href="https://www.kangruli.web.id/search?q=Pengetahuan">Pengetahuan</a>
+      <a href="https://www.kangruli.web.id/search?q=Panduan Belajar Mandiri">Belajar Mandiri</a>
+      <a href="https://www.kangruli.web.id/search?q=Literasi & Soft Skill">Literasi</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Media Sosial</button>
+    <div class="dropdown-content">
+      <a href="https://www.kangruli.web.id/search?q=Facebook">Facebook</a>
+      <a href="https://www.kangruli.web.id/search?q=Instagram">Instagram</a>
+      <a href="https://www.kangruli.web.id/search?q=TikTok">TikTok</a>
+      <a href="https://www.kangruli.web.id/search?q=YouTube">YouTube</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Kripto & Investasi</button>
+    <div class="dropdown-content">
+      <a href="https://www.kangruli.web.id/search?q=Altcoin">Altcoin</a>
+      <a href="https://www.kangruli.web.id/search?q=Bitcoin">Bitcoin</a>
+      <a href="https://www.kangruli.web.id/search?q=Emas">Emas</a>
+      <a href="https://www.kangruli.web.id/search?q=Kripto">Kripto</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Teknologi & Bisnis</button>
+    <div class="dropdown-content">
+      <a href="https://www.kangruli.web.id/search?q=Gadget">Gadget</a>
+      <a href="https://www.kangruli.web.id/search?q=Teknologi">Teknologi</a>
+      <a href="https://www.kangruli.web.id/search?q=Keterampilan Digital">Keterampilan Digital</a>
+      <a href="https://www.kangruli.web.id/search?q=Startup">Startup</a>
+      <a href="https://www.kangruli.web.id/search?q=Tips & Tricks">Tips</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Lainnya</button>
+    <div class="dropdown-content">
+      <a href="https://www.kangruli.web.id/search?q=Loker">Loker</a>
+      <a href="https://www.kangruli.web.id/search?q=Motivasi">Motivasi</a>
+      <a href="https://www.kangruli.web.id/search?q=Kesehatan">Kesehatan</a>
+      <a href="https://www.kangruli.web.id/search?q=Peluang+Usaha">Peluang Usaha</a>
+      <a href="https://www.kangruli.web.id/search?q=Ulasan+Bisnis">Ulasan Bisnis</a>
+      <a href="https://www.kangruli.web.id/search?q=Blogging">Blogging</a>
+      <a href="https://www.kangruli.web.id/search?q=SEO">SEO</a>
+      <a href="https://www.kangruli.web.id/search?q=Google+Adsense">Adsense</a>
+      <a href="https://www.kangruli.web.id/search?q=WordPress">WordPress</a>
+      <a href="https://www.kangruli.web.id/search?q=Tokoh">Tokoh</a>
+    </div>
+  </div>
+
+  <a href="https://www.kangruli.web.id/p/tentang.html">Tentang</a
+
 
 <main>
   <h2>Kenali Situs www.kangruli.web.id</h2>
