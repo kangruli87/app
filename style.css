@@ -518,12 +518,11 @@ color: var(--other-color);
 }
 
 
-
 .navlist {
   list-style: none;
   display: flex;
   gap: 20px;
-  background-color: #111;
+  background: #f8f8f8;
   padding: 10px;
 }
 
@@ -533,7 +532,7 @@ color: var(--other-color);
 
 .navlist a {
   text-decoration: none;
-  color: white;
+  color: #333;
   padding: 8px 12px;
   display: block;
 }
@@ -541,24 +540,18 @@ color: var(--other-color);
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #222;
-  min-width: 180px;
   top: 100%;
   left: 0;
-  z-index: 1;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 99;
+  min-width: 200px;
 }
 
-.dropdown-content li a {
-  padding: 10px;
-  color: white;
-  text-align: left;
+.dropdown-content li {
+  width: 100%;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.dropdown-content li a:hover {
-  background-color: #333;
-}
-
