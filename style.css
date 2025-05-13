@@ -563,3 +563,31 @@ color: var(--other-color);
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+
+
+
+/* Gaya default untuk desktop */
+body {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+}
+
